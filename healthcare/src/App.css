@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -12,8 +14,12 @@
     --main-font: 'Mulish';
 }
 
+
+/* nav-bar code */
+
 nav {
     display: flex;
+    height: 6em;
 }
 
 .logo {
@@ -64,5 +70,104 @@ li:not(:first-child) {
 li:nth-child(1) {
     color: black;
     font-family: var(--main-font);
-    font-weight: 900;
+    font-weight: bolder;
+}
+
+
+/* hero-section */
+
+section {
+    display: flex;
+    height: 35em;
+    padding: 8em;
+    margin-top: 1em;
+}
+
+
+/* first-section */
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-weight: bolder;
+    font-size: 3em;
+    margin-bottom: .2em;
+}
+
+p {
+    font-size: .9em;
+    color: gray;
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+button {
+    width: 14em;
+    height: 3em;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 18px;
+    margin-top: 2em;
+}
+
+
+/* second-section */
+
+.second-section {
+    height: 30em;
+    width: 60em;
+    margin-left: 15em;
+    margin-top: -5em;
+}
+
+img {
+    height: 30em;
+    width: 35em;
+}
+
+
+/* Our Services */
+
+.our-services {
+    margin-top: 5em;
+}
+
+h2 {
+    font-family: var(--main-font);
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 43%;
+    margin-bottom: .2em;
+}
+
+hr {
+    width: 2.5em;
+    margin-left: 48%;
+    height: .25em;
+    background: #000;
+}
+
+.ourservice-text {
+    margin-top: .9em;
+    margin-left: 25%;
+}
+
+.service-container {
+    margin-left: 12em;
+    margin-top: 4em;
+}
+
+.service-box {
+    width: 15em;
+    height: 15em;
+    background: #000;
+    border-radius: 10px;
+    display: grid;
+    margin: 2em;
 }
