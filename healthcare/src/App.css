@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,26 +9,60 @@
     --primary-color: #458FF6;
     --logo-color: #ffffff;
     --text-color: black;
+    --main-font: 'Mulish';
+}
+
+nav {
+    display: flex;
 }
 
 .logo {
     border-radius: 50%;
-    height: 1.5em;
-    width: 1.5em;
+    height: 2.6em;
+    width: 2.6em;
     background: var(--primary-color);
     color: var(--logo-color);
-    padding-top: .3em;
-    padding-left: .7em;
+    padding-top: .6em;
+    padding-left: .9em;
     font-weight: bolder;
-    margin-left: 5em;
-    margin-top: 2em;
+    margin-left: 7em;
+    margin-top: 3em;
+    font-size: 14px;
+    font-family: var(--main-font);
 }
 
 .logo-text {
     color: var(--text-color);
     font-family: Mulish;
     font-weight: bolder;
-    margin-left: 7.3em;
-    margin-top: -1.7em;
-    font-size: 1em;
+    margin-left: 7em;
+    margin-top: -1.5em;
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+.logo-container {
+    margin-left: 1em;
+}
+
+.link-container {
+    margin-top: 3em;
+    margin-left: 30em;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 2.5em;
+    display: inline-block;
+}
+
+li:not(:first-child) {
+    color: gray;
+}
+
+li:nth-child(1) {
+    color: black;
+    font-family: var(--main-font);
+    font-weight: 900;
 }

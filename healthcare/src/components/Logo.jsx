@@ -3,12 +3,16 @@ import React from 'react'
 
 function Logo() {
     return (
-        <>
+        
+        <div className="logo-container">
             <div className='logo'>
-                T
+                    T
             </div>
             <p className='logo-text'>Trafalgar</p>
-        </>
+
+        </div>
+           
+    
         
     )
 }
