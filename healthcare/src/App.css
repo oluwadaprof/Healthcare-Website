@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
 :root {
     --primary-color: #458FF6;
     --logo-color: #ffffff;
@@ -73,6 +78,10 @@ li:nth-child(1) {
     font-weight: bolder;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 
 /* hero-section */
 
@@ -116,6 +125,10 @@ button {
     margin-top: 2em;
     font-family: var(--main-font);
     font-weight: 300;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 
@@ -167,20 +180,47 @@ hr {
 .service-container {
     margin-left: 12em;
     margin-top: 4em;
+    background: url('../src//assets/Vector\ \(1\).png') no-repeat;
+    background-size: 40em;
+    background-position-x: -50%;
+    z-index: 999;
 }
 
 .service-box {
     width: 15em;
     height: 15em;
-    background: #000;
+    background: white;
     border-radius: 10px;
     display: inline-grid;
     margin: 5em;
+    box-shadow: #E5E9F6 100%;
+    border: 1px solid var(--primary-color);
 }
 
 .icons {
-    height: 1em;
-    width: 1em;
+    height: 4.1em;
+    width: 4em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+.service-box__header {
+    color: black;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-top: -1em;
+    margin-left: 1em;
+    margin-bottom: -.6em;
+}
+
+.service-box__sub--text {
+    color: gray;
+    font-size: .8em;
+    font-weight: lighter;
+    font-family: var(--main-font);
+    margin-left: 1.8em;
+    margin-top: -2.9em;
 }
 
 .learn-more-btn {
@@ -238,4 +278,165 @@ h3 {
     background: white;
     margin-left: 66%;
     font-family: var(--main-font);
+}
+
+
+/* section-four */
+
+.section-four {
+    display: flex;
+    height: 35em;
+    padding: 8em;
+    margin-top: 1em;
+    margin-left: 10em;
+}
+
+h4 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.divider2 {
+    margin-left: .1em;
+    margin-top: .9em;
+}
+
+.download-text {
+    margin-top: 2em;
+}
+
+.download-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: white;
+    height: 3.6em;
+    width: 13em;
+    font-family: var(--main-font);
+    margin-top: 6em;
+}
+
+.download-img {
+    height: 30em;
+    width: 45em;
+    margin-top: -7.2em;
+    margin-left: 2em;
+}
+
+
+/* Customer-card */
+
+.customer-card {
+    background: #5A98F2;
+    height: 25em;
+    width: 59em;
+    margin-left: 20em;
+    margin-bottom: 10em;
+    margin-top: 10em;
+    border-radius: 10px;
+    color: white;
+}
+
+h5 {
+    font-family: var(--main-font);
+    font-size: 1.7em;
+    margin-left: 11em;
+    padding-top: 1.8em;
+}
+
+.customer-divider {
+    width: 3em;
+    height: .25em;
+    margin-top: 1em;
+    margin-left: 29em;
+    border: none;
+    background: white;
+}
+
+.customer-card-flex {
+    display: flex;
+}
+
+.customer-avatar {
+    height: 8em;
+    width: 8em;
+    margin-top: 5em;
+    margin-left: 9em;
+    border-radius: 50%;
+    border: solid 4px white;
+}
+
+.customer--flex__one {
+    display: flex;
+}
+
+.customer-text {
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 700;
+    margin-left: 2em;
+    margin-top: 7em;
+    font-size: 1.1em;
+}
+
+.customer-span-text {
+    font-weight: lighter;
+    margin-left: .05em;
+    font-size: .8em;
+}
+
+.customer--text__quote {
+    color: white;
+    margin-left: 7em;
+    margin-top: 6.5em;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+
+/* article */
+
+h6 {
+    color: #000;
+    font-family: var(--main-font);
+    font-size: 1.8em;
+    margin-left: 40%;
+    margin-bottom: .4em;
+}
+
+.article--divider {
+    height: .4em;
+    width: 3.5em;
+    background: rgb(49, 48, 48);
+    margin-left: 48em;
+}
+
+.article--card__container {
+    display: flex;
+    margin-left: 18em;
+    margin-top: 3em;
+}
+
+.article--card {
+    width: 17em;
+    height: 20em;
+    border-radius: 20px;
+    background: white;
+    margin: 2em;
+    overflow: hidden;
+}
+
+.article--card__image {
+    width: 17em;
+    height: 12.8em;
+    margin-top: -2em;
+}
+
+.article--card__title {
+    font-family: var(--main-font);
+    font-size: .8em;
+    margin-left: 1em;
+    color: black;
+    padding: 3em;
+    font-weight: 700;
 }

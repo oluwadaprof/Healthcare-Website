@@ -6,6 +6,8 @@ import HeroSection from './components/HeroSection';
 import OurServices from './components/OurServices';
 import LeadingHealth from './components/LeadingHealth';
 import DownloadSection from './components/DownloadSection';
+import CustomerCard from './components/CustomerCard';
+import Article from './components/Article';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <OurServices />
       <LeadingHealth />
       <DownloadSection />
+      <CustomerCard />
+      <Article />
     </div>
   );
 }

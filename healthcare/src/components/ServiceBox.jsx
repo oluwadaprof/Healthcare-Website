@@ -1,11 +1,12 @@
 import React from 'react'
 
 
-function ServiceBox({icon, name , text }) {
+function ServiceBox({icon, header , text }) {
     return (
         <div className='service-box'>
-            <img className='icons' src="https://cdn.iconscout.com/icon/premium/png-256-thumb/find-doctor-2374893-1988353.png" alt="" />
-
+            <img className='icons' src={icon} alt="" />
+            <p className='service-box__header'>{header}</p>
+            <p className='service-box__sub--text'>{text}</p>
             
         </div>
     )
