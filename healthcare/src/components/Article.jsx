@@ -12,14 +12,21 @@ function Article() {
             <div className="article--card__container">
                 <ArticleCard image={ArticleImageOne}
                              title='Disease detection, check 
-                             up in the laboratory' />
+                             up in the laboratory' 
+                             content='In this case, the role of the health laboratory is very important to do
+                             a disease detection...'/>
                 <ArticleCard image={ArticleImageTwo}
                              title='Herbal medicines that are 
-                             safe for consumption'/>
+                             safe for consumption'
+                             content='Herbal medicine is very widely used at 
+                             this time because of its very good for your health...'/>
                 <ArticleCard image={ArticleImageThree}
                               title='Natural care for healthy 
-                              facial skin'/>
+                              facial skin'
+                              content='A healthy lifestyle should start from now and also for your skin health.
+                              There are some...'/>
             </div>
+            <button className='view-all-btn'>View all</button>
             
         </div>
     )

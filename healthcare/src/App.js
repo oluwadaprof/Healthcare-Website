@@ -8,6 +8,7 @@ import LeadingHealth from './components/LeadingHealth';
 import DownloadSection from './components/DownloadSection';
 import CustomerCard from './components/CustomerCard';
 import Article from './components/Article';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <DownloadSection />
       <CustomerCard />
       <Article />
+      <Footer />
     </div>
   );
 }

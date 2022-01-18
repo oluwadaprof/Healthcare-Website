@@ -419,11 +419,12 @@ h6 {
 
 .article--card {
     width: 17em;
-    height: 20em;
+    height: 22em;
     border-radius: 20px;
     background: white;
     margin: 2em;
     overflow: hidden;
+    border: 1px solid var(--primary-color);
 }
 
 .article--card__image {
@@ -434,9 +435,42 @@ h6 {
 
 .article--card__title {
     font-family: var(--main-font);
-    font-size: .8em;
-    margin-left: 1em;
+    font-size: .95em;
+    margin-left: -.5em;
+    margin-top: -.9em;
     color: black;
-    padding: 3em;
+    padding: 1.95em;
     font-weight: 700;
+}
+
+.article--card__content {
+    margin-left: 2em;
+    margin-top: -2em;
+    font-size: .8em;
+}
+
+.read--more {
+    color: var(--primary-color);
+    font-size: .8em;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.view-all-btn {
+    border-radius: 50px;
+    height: 3.6em;
+    width: 13em;
+    margin-bottom: 20em;
+    margin-top: 5em;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: white;
+    margin-left: 46%;
+    font-family: var(--main-font);
+}
+
+footer {
+    height: 30em;
+    width: 100%;
+    background-color: var(--primary-color);
 }

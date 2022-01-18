@@ -6,7 +6,8 @@ function ArticleCard({image, title, content}) {
         <div className='article--card'>
             <img className='article--card__image' src={image} alt="" />
             <h6 className='article--card__title'>{title}</h6>
-            <p>{content}</p>
+            <p className='article--card__content'>{content}</p>
+            <p className='read--more'>Read more</p>
             
         </div>
     )
